@@ -1,6 +1,0 @@
-@ApprovalTasks_HostAddress = http://localhost:5251
-
-GET {{ApprovalTasks_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

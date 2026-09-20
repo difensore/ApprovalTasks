@@ -1,4 +1,7 @@
 
+using ApprovalTasks.Interfaces;
+using ApprovalTasks.Services;
+
 namespace ApprovalTasks
 {
     public class Program
@@ -8,6 +11,8 @@ namespace ApprovalTasks
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddSingleton<IApprovalTaskRepository, InMemoryApprovalTaskRepository>();
+            builder.Services.AddScoped<IApprovalTaskService, ApprovalTaskService>();
 
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
