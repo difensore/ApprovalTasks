@@ -59,7 +59,6 @@ namespace ApprovalTasks.Services
                 throw new ApprovalTaskNotFoundException(id);
             }
 
-            // 1. Перевіряємо виконавця
             if (task.AssigneeId != request.ActorId)
             {
                 throw new ApprovalTaskForbiddenException();
