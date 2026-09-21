@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../ApprovalTasksTests/ApprovalTasksTests.csproj" Id="9e14035f-451f-4e79-849c-ac423b1820a2" />
+  <Project Path="ApprovalTasks.csproj" />
+</Solution>
